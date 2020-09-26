@@ -91,6 +91,11 @@ export default ({
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">
         <Link to="/sign-up -page"> Sign Up</Link>
       </PrimaryLink>
+      <NavLink>
+        <Link>
+          <Link to="https://wa.link/ax5bxz">send Message</Link>
+        </Link>
+      </NavLink>
     </NavLinks>,
   ];
 
