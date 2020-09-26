@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+
+//css
+import "../../styles/ShowCase.css";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
@@ -24,7 +27,7 @@ const Actions = styled.div`
     ${tw`sm:pr-48 pl-8 py-4 sm:py-5 rounded-full border-2 w-full font-medium focus:outline-none transition duration-300  focus:border-primary-500 hover:border-gray-500`}
   }
   button {
-    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-primary-500 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-primary-900 transition duration-300`}
+    ${tw`w-full sm:absolute right-0 top-0 bottom-0 bg-secondary-500 text-gray-100 font-bold mr-2 my-4 sm:my-2 rounded-full py-4 flex items-center justify-center sm:w-40 sm:leading-none focus:outline-none hover:bg-primary-900 transition duration-300`}
   }
 `;
 
@@ -49,23 +52,22 @@ export default ({ roundedHeaderButton }) => {
   return (
     <>
       <Header roundedHeaderButton={roundedHeaderButton} />
-      <Container>
+      <Container className="showcase">
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates{" "}
-              <span tw="text-primary-500">for you.</span>
+              Am Levson A React <span tw="text-secondary-500">Developer</span>
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
+              Am an front-end developer using react js Library with 3 years
+              Experience .I also do node js ,php and firebase backend services
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />
               <button>Get Started</button>
             </Actions>
             <CustomersLogoStrip>
-              <p>Our TRUSTED Customers</p>
+              <p>companies Have worKed with</p>
               <img src={CustomersLogoStripImage} alt="Our Customers" />
             </CustomersLogoStrip>
           </LeftColumn>

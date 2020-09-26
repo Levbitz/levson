@@ -5,7 +5,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
 
-import Features from "components/features/ThreeColWithSideImage.js";
+import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground";
+
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
@@ -32,7 +33,7 @@ function Home() {
         subheading={<Subheading>Features</Subheading>}
         heading={
           <>
-            We have Amazing <HighlightedText>Service.</HighlightedText>
+            Services <HighlightedText>Offered.</HighlightedText>
           </>
         }
       />

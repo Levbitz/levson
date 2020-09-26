@@ -6,9 +6,14 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { Link } from "react-router-dom";
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+//import logo from "../../images/logo.svg";
+
+import MyLogo from "../../images/myLogo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+
+//css
+import "../../styles/Logo.css";
 
 //pages
 
@@ -94,9 +99,9 @@ export default ({
     collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
-      <img src={logo} alt="logo" />
-      Treact
+    <LogoLink className="my_logo" href="/">
+      <img className="App-logo" src={MyLogo} alt="logo" />
+      Levson
     </LogoLink>
   );
 
